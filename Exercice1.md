@@ -13,14 +13,14 @@ Clique droit sur Kelly Rhameur et sélectionne Properties.
 
 Allez dans l'onglet Organization et note les attributs associés à Kelly (ex : Département, Poste, etc.).
 ![attributs Kelly2](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/AttribuKelly2.PNG)
-Créer Lionel Lemarchand.
-![attributs Lionel](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/AttributLion.PNG)
+*Créer Lionel Lemarchand*
 Clique droit dans l'OU où tu veux créer le nouvel utilisateur et sélectionne New > User.
 Dans les champs de création, renseigne les informations de Lionel Lemarchand.
 Dans les attributs Company, Department, etc., entre les mêmes valeurs que celles de Kelly Rhameur.
 Attribuer un mot de passe et finir la création.
 
-Attribue un mot de passe pour Lionel, puis termine la création.
+![attributs Lionel](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/AttributLion.PNG)
+
 ## Q.1.1.2 Créer une OU DeactivatedUsers et déplace le compte désactivé de Kelly Rhameur dedans.
 Créer l'OU.
 
