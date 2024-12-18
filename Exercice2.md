@@ -80,4 +80,8 @@ le paquet marqué comme invalide par le suivi de connexion (connection tracking)
 nft add rule inet inet_filter_table in_chain ip saddr 172.16.0.0/16 tcp dport { 9101, 9103 } accept
 Vérifier les règles ajoutées : nft list ruleset
 ![RègleBareos](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/r%C3%A8gleBareos.PNG)
-Sauvegarder les règles nftables : nft list ruleset > /etc/nftables.conf
+# Partie 6 : Analyse de logs
+## Q.2.6.1 Lister les 10 derniers échecs de connexion ayant eu lieu sur le serveur en indiquant pour chacun : La date et l'heure de la tentative, L'adresse IP de la machine ayant fait la tentative
+Utilise la commande suivante pour afficher les 10 derniers échecs de connexion :
+sudo journalctl | grep "Failed password" | tail -n 10 | awk '{print $1, $2, $3, $11}'
+![la sortie de logs](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/logs.PNG)
