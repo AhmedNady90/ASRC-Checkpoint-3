@@ -87,6 +87,11 @@ Clique droit et choisis New > Mapped Drive.
 Pour le lecteur E:, configure la lettre du lecteur et l’emplacement du partage réseau.
 on Répète l’opération pour le lecteur F:.
 ![drivemapE et F](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/drivemap.PNG)
+
+
 Appliquer la GPO aux utilisateurs ou ordinateurs.
+
+
+
 ![GPOlink to the whole domaine](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/GPO%20link%20to%20the%20domain.PNG)
 
