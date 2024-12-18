@@ -8,12 +8,14 @@ Rechercher Kelly Rhameur.
 
 Dans le volet de gauche, trouve le compte Kelly Rhameur dans l'OU où elle est stockée.
 Copier les attributs.
-![attributs Kelly](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/AttribuKelly.PNG)
 Clique droit sur Kelly Rhameur et sélectionne Properties.
+
+![attributs Kelly](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/AttribuKelly.PNG)
 
 Allez dans l'onglet Organization et note les attributs associés à Kelly (ex : Département, Poste, etc.).
 ![attributs Kelly2](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/AttribuKelly2.PNG)
 *Créer Lionel Lemarchand*
+
 Clique droit dans l'OU où tu veux créer le nouvel utilisateur et sélectionne New > User.
 Dans les champs de création, renseigne les informations de Lionel Lemarchand.
 Dans les attributs Company, Department, etc., entre les mêmes valeurs que celles de Kelly Rhameur.
