@@ -74,4 +74,10 @@ les paquets qui arrivent sur l'interface de loopback lo
 ## Q.2.5.3 Quels types sont interdit ?
 le paquet marqué comme invalide par le suivi de connexion (connection tracking)
 ## Q.2.5.4 Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.
-
+*Autoriser Bareos Director (port 9101)* 
+*Autoriser Bareos File Daemon (port 9102)* 
+*Autoriser Bareos Storage Daemon (port 9103)* 
+nft add rule inet inet_filter_table in_chain ip saddr 172.16.0.0/16 tcp dport { 9101, 9103 } accept
+Vérifier les règles ajoutées : nft list ruleset
+![RègleBareos](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/r%C3%A8gleBareos.PNG)
+Sauvegarder les règles nftables : nft list ruleset > /etc/nftables.conf
