@@ -74,5 +74,19 @@ Clique droit sur la GPO créée et sélectionne Edit.
 Dans Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy.
 Modifie les options de mot de passe pour durcir la politique.
 ![mot de pass strategie](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/motdepasse%20strategie.PNG)
+# Partie 3 : Lecteurs réseaux
+## Q.1.3.1 Créer une GPO Drive-Mount qui monte les lecteurs E: et F: sur les clients.
+Créer une GPO pour monter les lecteurs réseaux.
 
+Dans Group Policy Management, crée une nouvelle GPO nommée Drive-Mount.
+Éditer la GPO pour ajouter les lecteurs.
+
+Fais un clic droit sur la GPO Drive-Mount et sélectionne Edit.
+Va dans User Configuration > Preferences > Windows Settings > Drive Maps.
+Clique droit et choisis New > Mapped Drive.
+Pour le lecteur E:, configure la lettre du lecteur et l’emplacement du partage réseau.
+on Répète l’opération pour le lecteur F:.
+![drivemapE et F](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/drivemap.PNG)
+Appliquer la GPO aux utilisateurs ou ordinateurs.
+![GPOlink to the whole domaine](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/GPO%20link%20to%20the%20domain.PNG)
 
