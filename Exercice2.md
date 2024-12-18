@@ -58,21 +58,22 @@ vgdisplay vg_sauvegarde
 # Partie 4 : Sauvegardes
 ## Q.2.4.1 Expliquer succinctement les rôles respectifs des 3 composants bareos installés sur la VM (Les composants bareos-dir, bareos-sd et bareos-fd sont installés avec une configuration par défaut).
 *bareos-dir* :
-Le Director est le composant qui gère les politiques de sauvegarde et les plans de sauvegarde. Il contrôle l'ensemble des opérations de sauvegarde et de restauration.
+Le Director est le composant qui gère les politiques et les plans de sauvegarde. Il contrôle toutes les opérations de sauvegarde et de restauration.
 *bareos-sd* :
-Le Storage Daemon gère les supports de sauvegarde, comme les disques ou les bandes, où les données sont stockées.
+Le Storage Daemon gère les supports de sauvegarde, tels que les disques.
 *bareos-fd* :
-Le File Daemon est installé sur les machines clients et est responsable de la sauvegarde des fichiers. Il transmet les données à sauvegarder au Director.
+Le File Daemon est installé sur les machines clientes et est responsable de la sauvegarde des fichiers.
 # Partie 5 : Filtrage et analyse réseau
 ## Q.2.5.1 Quelles sont actuellement les règles appliquées sur Netfilter ?
 Pour afficher les règles de filtrage actuelles sur iptables, utilise  nft list ruleset
 ![les règles](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/nfr%C3%A8gles.PNG)
 ## Q.2.5.2 Quels types de communications sont autorisées ?
+(voir l'image fournie ci-dessus![les règles](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/nfr%C3%A8gles.PNG))
 Les connexions SSH (port 22)
 Les connexions ICMP 
 les paquets qui arrivent sur l'interface de loopback lo
 ## Q.2.5.3 Quels types sont interdit ?
-le paquet marqué comme invalide par le suivi de connexion (connection tracking)
+le paquet marqué comme invalide par le suivi de connexion (connection tracking) (voir l'image fournie ci-dessus![les règles](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/nfr%C3%A8gles.PNG))
 ## Q.2.5.4 Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.
 *Autoriser Bareos Director (port 9101)* 
 *Autoriser Bareos File Daemon (port 9102)* 
