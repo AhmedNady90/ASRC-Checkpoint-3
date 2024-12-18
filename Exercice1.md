@@ -59,7 +59,7 @@ Configurer les restrictions d'accès.
 
 Clique droit sur Gabriel Ghul > Properties > Account > Logon Hours.
 Dans la fenêtre Logon Hours, bloque les heures pendant lesquelles Gabriel ne doit pas pouvoir se connecter. Sélectionne les heures de 7h à 17h, du lundi au vendredi.
-![logonhours](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/GabrailLogonhours.PNG)
+![logonhours](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/logonhours.PNG)
 # Q.1.2.2 De même, bloquer sa connexion au seul ordinateur CLIENT01.
 Configurer l'option Logon Workstations.
 Dans les propriétés de l'utilisateur Gabriel Ghul, sous l'onglet Account, clique sur Logon Workstations.
