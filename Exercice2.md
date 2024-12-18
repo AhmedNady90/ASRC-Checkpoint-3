@@ -68,8 +68,10 @@ Le File Daemon est installé sur les machines clients et est responsable de la s
 Pour afficher les règles de filtrage actuelles sur iptables, utilise  nft list ruleset
 ![les règles](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/nfr%C3%A8gles.PNG)
 ## Q.2.5.2 Quels types de communications sont autorisées ?
-Pour afficher utilise  
+Les connexions SSH (port 22)
+Les connexions ICMP 
+les paquets qui arrivent sur l'interface de loopback lo
 ## Q.2.5.3 Quels types sont interdit ?
-
+le paquet marqué comme invalide par le suivi de connexion (connection tracking)
 ## Q.2.5.4 Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.
 
