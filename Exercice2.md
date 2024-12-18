@@ -16,7 +16,7 @@ Désactiver l'accès SSH pour root :
 PermitRootLogin no
 Redémarrer le service SSH 
 systemctl restart sshd
-
+Voir l'image founie ![sshconfig](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/SSHCONFIG.PNG)
 ## Q.2.2.2 Autoriser l'accès à distance à ton compte personnel uniquement.
 dans le fichier de configuration SSH, ajoute AllowUsers trump
 
