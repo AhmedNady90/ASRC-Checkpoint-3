@@ -34,8 +34,10 @@ systemctl restart sshd
 dans le fichier de configuration SSH, ajoute AllowUsers trump
 
 Voir l'image founie
+
 ![sshconfig](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/SSHCONFIG.PNG)
 ## Q.2.2.3 Mettre en place une authentification par clé valide et désactiver l'authentification par mot de passe
+
 Générer une paire de clés SSH sur vm local
 
 ssh-keygen -t rsa -b 4096
@@ -55,13 +57,19 @@ df -h
 ![systèmes de fichiers montés](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/fichiermont%C3%A9s.PNG)
 ## Q.2.3.2 Quel type de système de stockage ils utilisent ?
 le type de système de fichiers
+
 lsblk -f
+
 ![type de système de fichiers](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/type%20de%20syst%C3%A8me%20de%20fichiers.PNG)
 ## Q.2.3.3 Ajouter un nouveau disque de 8,00 Gio au serveur et réparer le volume RAID
 le disk a été ajouté et pour Vérifier la présence du disque
+
 lsblk
+
 Réparer le volume RAID
+
 mdadm --add /dev/md0 /dev/sdb
+
 ![Réparer le volume RAID](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/raid%20reparer.PNG)
 ## Q.2.3.4 Ajouter un nouveau volume logique LVM de 2 Gio qui servira à héberger des sauvegardes. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.
 Créer un volume logique LVM : pvcreate /dev/sdb
