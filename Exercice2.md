@@ -65,13 +65,20 @@ mdadm --add /dev/md0 /dev/sdb
 ![Réparer le volume RAID](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/raid%20reparer.PNG)
 ## Q.2.3.4 Ajouter un nouveau volume logique LVM de 2 Gio qui servira à héberger des sauvegardes. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.
 Créer un volume logique LVM : pvcreate /dev/sdb
+
 Crée un groupe de volumes : vgcreate vg_sauvegarde /dev/sdX
+
 Crée un volume logique (LV) de 2 Go : lvcreate -L 2G -n lv_sauvegarde vg_sauvegarde
+
 Formate le volume logique : mkfs.ext4 /dev/vg_sauvegarde/lv_sauvegarde
+
 Monter le volume : mount /dev/vg_sauvegarde/lv_sauvegarde /var/lib/bareos/storage
+
 montage automatique : Ajoute : /dev/vg_sauvegarde/lv_sauvegarde /var/lib/bareos/storage ext4 defaults 0 0 une ligne dans le fichier /etc/fstab
+
 ![lvdisplay](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/lvdisplay.PNG)
 ![lvm verification](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/verficationlvm.PNG)
+
 ## Q.2.3.5 Combien d'espace disponible reste-t-il dans le groupe de volume ?
 vgdisplay vg_sauvegarde 
 ![espace disponible](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/espace%20disponible.PNG)
