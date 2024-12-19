@@ -3,7 +3,8 @@
 ## Q.2.1.1 Sur le serveur, créer un compte pour ton usage personnel.
 Créer un utilisateur : useradd -m trump
 Attribuer un mot de passe : passwd trump
-voici le utilisateur crée trump
+
+voici l'utilisateur crée trump
 ![Comptetrumpcreated](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/trumpCreated.PNG)
 ## Q.2.1.2 Quelles préconisations proposes-tu concernant ce compte ?
 Utiliser un mot de passe fort 
