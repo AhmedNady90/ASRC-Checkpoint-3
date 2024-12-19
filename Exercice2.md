@@ -16,10 +16,15 @@ ajouter cet utilisateur à un groupe spécifique qui aura des permissions adapt�
 # Partie 2 : Configuration de SSH
 ## Q.2.2.1 Désactiver complètement l'accès à distance de l'utilisateur root.
 Modifier la configuration SSH
+
 nano /etc/ssh/sshd_config
-Désactiver l'accès SSH pour root :
+
+Désactiver l'accès SSH pour root 
+
 PermitRootLogin no
+
 Redémarrer le service SSH 
+
 systemctl restart sshd
 ## Q.2.2.2 Autoriser l'accès à distance à ton compte personnel uniquement.
 dans le fichier de configuration SSH, ajoute AllowUsers trump
