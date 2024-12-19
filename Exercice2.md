@@ -23,10 +23,15 @@ Voir l'image founie
 ![sshconfig](https://github.com/AhmedNady90/ASRC-Checkpoint-3/blob/main/SSHCONFIG.PNG)
 ## Q.2.2.3 Mettre en place une authentification par clé valide et désactiver l'authentification par mot de passe
 Générer une paire de clés SSH sur vm local
+
 ssh-keygen -t rsa -b 4096
+
 Copier la clé publique sur le serveur
+
 ssh-copy-id trump@172.16.211.50
+
 Désactiver l'authentification par mot de passe 
+
 PasswordAuthentication no
 
 # Partie 3 : Analyse du stockage
