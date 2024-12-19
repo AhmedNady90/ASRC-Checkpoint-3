@@ -5,9 +5,13 @@ Créer un utilisateur : useradd -m trump
 Attribuer un mot de passe : passwd trump
 ## Q.2.1.2 Quelles préconisations proposes-tu concernant ce compte ?
 Utiliser un mot de passe fort 
+
 utiliser l’authentification par clé SSH au lieu d'un mot de passe
+
 ne pas donner de privilèges d'administrateur à ce compte
+
 ajouter cet utilisateur à un groupe spécifique qui aura des permissions adaptées à ses besoins
+
 # Partie 2 : Configuration de SSH
 ## Q.2.2.1 Désactiver complètement l'accès à distance de l'utilisateur root.
 Modifier la configuration SSH
